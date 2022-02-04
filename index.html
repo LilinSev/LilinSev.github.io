@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma Land</title>
+    <link href="./css/main.css" rel="stylesheet">
+    <link href="./css/adaptive.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="./js/wow.min.js"></script>
+    <script> new WOW().init(); </script>
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="logo"></div>
+            <div class="nav_group">
+                <a href="#" class="nav_item wow animate__animated animate__fadeInDown">Home</a>
+                <a href="#" class="nav_item wow animate__animated animate__fadeInUp">Product</a>
+                <a href="#" class="nav_item wow animate__animated animate__fadeInDown">Pricing</a>
+                <a href="#" class="nav_item wow animate__animated animate__fadeInUp">About</a>
+                <a href="#" class="nav_item wow animate__animated animate__fadeInDown">Contact</a>
+            </div>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+            
+                <ul class="menu__box">
+                  <li><a class="menu__item wow animate__animated animate__fadeInLeft" href="#">Home</a></li>
+                    <li><a class="menu__item wow animate__animated animate__fadeInRight" href="#">Product</a></li>
+                    <li><a class="menu__item wow animate__animated animate__fadeInLeft" href="#">Pricing</a></li>
+                    <li><a class="menu__item wow animate__animated animate__fadeInRight" href="#">About</a></li>
+                    <li><a class="menu__item wow animate__animated animate__fadeInLeft" href="#">Contact</a></li>
+                    <form class="burger_nav_reg">
+                        <input class="burger_btn_email wow animate__animated animate__fadeInUp" type="email" placeholder="Your Email">
+                        <input type="submit" class="burger_btn_subscribe wow animate__animated animate__fadeInDown" value="Subscribe">
+                    </form>
+                </ul>
+              </div>
+            <form class="nav_reg">
+                <input class="btn_email wow animate__animated animate__fadeInUp" type="email" placeholder="Your Email">
+                <input type="submit" class="btn_subscribe wow animate__animated animate__fadeInDown" value="Subscribe">
+            </form>
+        </div>
+        <div class="header_content">
+            <div class="header_img wow animate__animated animate__fadeInLeft"></div>
+            <div class="header_text">
+                <p class="header_h1 wow animate__animated animate__fadeInDown">We focus on ergonomics</p>
+                <p class="header_description wow animate__animated animate__fadeInRight">Most calendars are designed for teams. Slate is designed for freelancers</p>
+                <a href="#" class="header_btn wow animate__animated animate__fadeInUp">Try For Free</a>
+            </div>
+        </div>
+    </header>
+    <main class="content">
+        <div class="features">
+            <div class="features_text_content">
+                <p class="features_title wow animate__animated animate__fadeInDown">At your fingertips</p>
+                <p class="features_name wow animate__animated animate__fadeIn">Features</p>
+                <p class="features_decription wow animate__animated animate__fadeInUp">Most calendars are designed for teams. Slate is designed for freelancers</p>
+            </div>
+            <div class="feature_items">
+                <div class="feature_item wow animate__animated animate__fadeInLeft">
+                    <div class="feature_item_top_content">
+                        <img src="./img/desktop/features_item_icon1.svg" alt="icon" class="feature_item_icon">
+                        <p class="feature_item_title">The best products start with Sketch</p>
+                    </div>
+                    <p class="features_item_description">Slate helps you see how many more days you need to work to reach your financial goal. </p>
+                </div>
+                <div class="feature_item wow animate__animated animate__fadeInUp">
+                    <div class="feature_item_top_content">
+                        <img src="./img/desktop/features_item_icon2.svg" alt="icon" class="feature_item_icon">
+                        <p class="feature_item_title">Fastest way to organize</p>
+                    </div>
+                    <p class="features_item_description">Slate helps you see how many more days you need to work to reach your financial goal. </p>
+                </div>
+                <div class="feature_item wow animate__animated animate__fadeInRight">
+                    <div class="feature_item_top_content">
+                        <img src="./img/desktop/features_item_icon3.svg" alt="icon" class="feature_item_icon">
+                        <p class="feature_item_title">Work better together</p>
+                    </div>
+                    <p class="features_item_description">Slate helps you see how many more days you need to work to reach your financial goal. </p>
+                </div>
+            </div>
+        </div>
+        <div class="notebook_content">
+            <div class="notebook_text">
+                <p class="notebook_title wow animate__animated animate__fadeInDown">Lightning fast prototyping </p>
+                <p class="notebook_description wow animate__animated animate__fadeInUp">Most calendars are designed for teams. Slate is designed for freelancers</p>
+            </div>
+            <a href="#" class="notebook_button wow animate__animated animate__fadeIn">Try For Free</a>
+            <div class="img_notebook wow animate__animated animate__fadeIn"></div>
+        </div>
+        <div class="subscribe_content">
+            <p class="subscribe_content_h1 wow animate__animated animate__fadeInDown">At your fingertips</p>
+            <p class="subscribe_content_h2 wow animate__animated animate__fadeInUp">Lightning fast prototyping </p>
+            <p class="subscribe_content_h3 wow animate__animated animate__fadeInDown">Subscribe to our Newsletter</p>
+            <p class="subscribe_content_h4 wow animate__animated animate__fadeInUp">Available exclusivery on Figmaland</p>
+            <form class="subscribe_nav_reg">
+                <input class="subscribe_btn_email wow animate__animated animate__fadeIn" type="email" placeholder="Your Email">
+                <br><input type="submit" class="subscribe_btn_subscribe wow animate__animated animate__fadeInUp" value="Subscribe">
+            </form>
+        </div>
+        <div class="partners_content">
+            <div class="partners_text">
+                <p class="partners_title wow animate__animated animate__fadeInDown">Partners</p>
+                <p class="partners_description wow animate__animated animate__fadeInUp">Most calendars are designed for teams. Slate is designed for freelancers</p>
+            </div>
+            <div class="partners_items_content">
+                <div class="partners_item wow animate__animated animate__fadeIn">
+                    <p class="partners_item_title">Client Name</p>
+                    <img src="./img/desktop/partners_item_icon1.svg" alt="icon" class="partners_item_icon">
+                    <p class="partners_item_description">Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+                </div>
+                <div class="partners_item wow animate__animated animate__fadeIn">
+                    <p class="partners_item_title">Client Name</p>
+                    <img src="./img/desktop/partners_item_icon2.svg" alt="icon" class="partners_item_icon">
+                    <p class="partners_item_description">Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+                </div>
+                <div class="partners_item wow animate__animated animate__fadeIn">
+                    <p class="partners_item_title">Client Name</p>
+                    <img src="./img/desktop/partners_item_icon3.svg" alt="icon" class="partners_item_icon">
+                    <p class="partners_item_description">Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+                </div>
+                <div id="partners_item1" class="partners_item wow animate__animated animate__fadeIn">
+                    <p class="partners_item_title">Client Name</p>
+                    <img src="./img/desktop/partners_item_icon3.svg" alt="icon" class="partners_item_icon">
+                    <p class="partners_item_description">Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+                </div>
+                <div id="partners_item2" class="partners_item wow animate__animated animate__fadeIn">
+                    <p class="partners_item_title">Client Name</p>
+                    <img src="./img/desktop/partners_item_icon4.svg" alt="icon" class="partners_item_icon">
+                    <p class="partners_item_description">Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+                </div>
+                <div id="partners_item3" class="partners_item wow animate__animated animate__fadeIn">
+                    <p class="partners_item_title">Client Name</p>
+                    <img src="./img/desktop/partners_item_icon5.svg" alt="icon" class="partners_item_icon">
+                    <p class="partners_item_description">Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+                </div>
+            </div>
+            <a href="#" class="partners_btn wow animate__animated animate__fadeIn">Try For Free</a>
+        </div>
+        <div class="testimonials_content">
+            <p class="testimonials_name wow animate__animated animate__fadeIn">Testimonials</p>
+            <div class="testimonials_client_groop">
+                <img src="./img/desktop/dropbox_img.png" alt="Brand_Icon" class="testimonials_img wow animate__animated animate__fadeInUp">
+                <p class="testimonials_description wow animate__animated animate__fadeIn">Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.</p>
+                <div class="testimonials_client">
+                    <img src="./img/desktop/avatar.svg" alt="Client_Img" class="testimonials_client_img wow animate__animated animate__fadeInLeft">
+                    <div class="testimonials_client_textcontent">
+                        <p class="testimonials_client_textcontent_h1 wow animate__animated animate__fadeInDown">Organize across</p>
+                        <p class="testimonials_client_textcontent_h2 wow animate__animated animate__fadeInUp">Ui designer</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="testimonials_btn wow animate__animated animate__fadeIn">More Testimonials</a>
+        </div>
+        <div class="pricing_content">
+            <p class="pricing_name wow animate__animated animate__fadeIn">Pricing</p>
+            <p class="pricing_decription wow animate__animated animate__fadeInUp">Most calendars are designed for teams. Slate is designed for freelancers</p>
+            <div class="pricing_items">
+                <div class="pricing_item wow animate__animated animate__fadeInLeft">
+                    <p class="pricing_item_name">Free</p>
+                    <p class="pricing_item_decription">Organize across all apps by hand</p>
+                    <div class="pricing_item_price_groop">
+                        <p class="pricing_item_price_number">0</p>
+                        <div class="pricing_item_price_leftcontent">
+                            <p class="pricing_item_price_valute">$</p>
+                            <p class="pricing_item_price_time">Per Month</p>
+                        </div>
+                    </div>
+                    <a href="#" class="pricing_item_btn">Order Now</a>
+                </div>
+                <div class="pricing_item wow animate__animated animate__fadeIn">
+                    <p class="pricing_item_name">STANDARD</p>
+                    <p class="pricing_item_decription">Organize across all apps by hand</p>
+                    <div class="pricing_item_price_groop">
+                        <p class="pricing_item_price_number">10</p>
+                        <div class="pricing_item_price_leftcontent">
+                            <p class="pricing_item_price_valute">$</p>
+                            <p class="pricing_item_price_time">Per Month</p>
+                        </div>
+                    </div>
+                    <a href="#" class="pricing_item_btn">Order Now</a>
+                </div>
+                <div id="pricingitembussines" class="pricing_item wow animate__animated animate__fadeInRight">
+                    <p id="pricing_item_name" class="pricing_item_name">BUSINESS</p>
+                    <p id="pricing_item_decription" class="pricing_item_decription">Organize across all apps by hand</p>
+                    <div class="pricing_item_price_groop">
+                        <p id="pricing_item_price_number" class="pricing_item_price_number">99</p>
+                        <div class="pricing_item_price_leftcontent">
+                            <p id="pricing_item_price_valute" class="pricing_item_price_valute">$</p>
+                            <p id="pricing_item_price_time" class="pricing_item_price_time">Per Month</p>
+                        </div>
+                    </div>
+                    <a href="#" class="pricing_item_btnbussines">Order Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="contant_content">
+            <p class="contact_name wow animate__animated animate__fadeIn">Contact Us</p>
+            <p class="contact_description wow animate__animated animate__fadeInUp">Most calendars are designed for teams. Slate is designed for freelancers</p>
+            <div class="contact_form_content">
+                <div class="contact_form_leftcontent wow animate__animated animate__fadeInLeft">
+                    <p class="contact_form_leftcontent_name">Contact Us</p>
+                    <form class="contact_form_leftcontent_form">
+                        <input type="text" placeholder="Your Name" class="contact_form_leftcontent_form_name">
+                        <br><input type="email" placeholder="Your Email" class="contact_form_leftcontent_form_email">
+                        <br><textarea name="text" class="contact_form_leftcontent_form_message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                        <br><input type="submit" class="contact_form_leftcontent_form_send" value="Send">
+                    </form>
+                </div>
+                <div class="contact_form_rightcontent wow animate__animated animate__fadeInRight">
+                    <div class="contact_form_rightcontent_info">
+                        <div class="contact_form_rightcontent_info_item">
+                            <img src="./img/desktop/contact_icon_location.svg" alt="icon" class="contact_form_rightcontent_info_item_location">
+                            <p class="contact_form_rightcontent_info_item_text">6386 Spring St undefined Anchorage, Georgia 12473 United States</p>
+                        </div>
+                        <div class="contact_form_rightcontent_info_item">
+                            <img src="./img/desktop/contact_icon_telephone.svg" alt="icon" class="contact_form_rightcontent_info_item_telephone">
+                            <p class="contact_form_rightcontent_info_item_text">(843) 555-0130</p>
+                        </div>
+                        <div class="contact_form_rightcontent_info_item">
+                            <img src="./img/desktop/contact_icon_email.svg" alt="icon" class="contact_form_rightcontent_info_item_email">
+                            <p class="contact_form_rightcontent_info_item_text">willie.jennings@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact_form_rightcontent_socialicon">
+                        <a href=""><img src="./img/desktop/contact_icon_twitter.svg" alt="icon" class="contact_form_rightcontent_socialicon_icon"></a>
+                        <a href=""><img src="./img/desktop/contact_icon_facebook.svg" alt="icon" class="contact_form_rightcontent_socialicon_icon"></a>
+                        <a href=""><img src="./img/desktop/contact_icon_linkedin.svg" alt="icon" class="contact_form_rightcontent_socialicon_icon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_content">
+            <div class="footer_pages">
+                <p class="footer_pages_name wow animate__animated animate__fadeIn">Pages</p>
+                <div class="footer_pages_items">
+                    <a href="#" class="footer_pages_item wow animate__animated animate__fadeInRight">Eleanor Edwards</a>
+                    <br><a href="#" class="footer_pages_item wow animate__animated animate__fadeInLeft">Ted Robertson</a>
+                    <br><a href="#" class="footer_pages_item wow animate__animated animate__fadeInRight">Annette Russell</a>
+                    <br><a href="#" class="footer_pages_item wow animate__animated animate__fadeInLeft">Jennie Mckinney</a>
+                    <br><a href="#" class="footer_pages_item wow animate__animated animate__fadeInRight">Gloria Richards</a>
+                </div>
+            </div>
+            <div class="footer_map wow animate__animated animate__fadeIn"><iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3124.898207761299!2d-9.101667919731087!3d38.4438618615025!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sro!2s!4v1643221186680!5m2!1sro!2s" width="472" height="247" style="border:0;" allowfullscreen="" loading="lazy" class="footer_map_item"></iframe></div>
+            <div class="footer_rightcontent">
+                <div class="footer_rightcontent_info">
+                    <div class="footer_rightcontent_info_item">
+                        <img src="./img/desktop/contact_icon_location.svg" alt="icon" class="footer_rightcontent_info_item_location wow animate__animated animate__fadeInLeft">
+                        <p class="footer_rightcontent_info_item_text wow animate__animated animate__fadeIn">6386 Spring St undefined Anchorage, Georgia 12473 United States</p>
+                    </div>
+                    <div class="footer_rightcontent_info_item">
+                        <img src="./img/desktop/contact_icon_telephone.svg" alt="icon" class="footer_rightcontent_info_item_telephone wow animate__animated animate__fadeInLeft">
+                        <p class="footer_rightcontent_info_item_text wow animate__animated animate__fadeIn">(843) 555-0130</p>
+                    </div>
+                    <div class="footer_rightcontent_info_item">
+                        <img src="./img/desktop/contact_icon_email.svg" alt="icon" class="footer_rightcontent_info_item_email wow animate__animated animate__fadeInLeft">
+                        <p class="footer_rightcontent_info_item_text wow animate__animated animate__fadeIn">willie.jennings@example.com</p>
+                    </div>
+                </div>
+                <div class="footer_rightcontent_socialicon">
+                    <a href=""><img src="./img/desktop/contact_icon_twitter.svg" alt="icon" class="footer_rightcontent_socialicon_icon wow animate__animated animate__fadeInLeft"></a>
+                    <a href=""><img src="./img/desktop/contact_icon_facebook.svg" alt="icon" class="footer_rightcontent_socialicon_icon wow animate__animated animate__fadeIn"></a>
+                    <a href=""><img src="./img/desktop/contact_icon_linkedin.svg" alt="icon" class="footer_rightcontent_socialicon_icon wow animate__animated animate__fadeInRight"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
