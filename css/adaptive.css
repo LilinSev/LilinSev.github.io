@@ -1,3 +1,14 @@
+@media all and (min-width : 1441px) {
+    .header_content {
+        width: 1440px;
+        margin: 0px auto;
+    }
+
+    .header_text {
+        margin-right: 0px;
+    }
+}
+
 @media all and (max-width : 1366px) {
     .header_img {
         width: 80%;
