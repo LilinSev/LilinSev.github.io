@@ -1,0 +1,580 @@
+/*  Спецификация  */
+@font-face {
+	font-family: 'Gill Sans';
+	src: url('../fonts/GillSansMT.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/GillSansMT.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../fonts/GillSansMT.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/GillSansMT.woff') format('woff'), /* Pretty Modern Browsers */
+		url('../fonts/GillSansMT.ttf')  format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/GillSansMT.svg#svgFontName') format('svg'); /* Legacy iOS */
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Gill Sans';
+	src: url('../fonts/GillSansMT-Bold.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/GillSansMT-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../fonts/GillSansMT-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/GillSansMT-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+		url('../fonts/GillSansMT-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/GillSansMT-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+	font-weight: bold;
+}
+
+body {
+	font-size: 20px;
+	font-weight: normal;
+	font-family: 'Gill Sans';
+}
+
+button,
+button:hover,
+button:focus {
+	font-family: inherit;
+	outline: none;
+	border: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	color: #26272d;
+	line-height: 1.2em;
+	margin: 0;
+}
+
+p {
+	color: #8c8f94;
+	padding: 0;
+	margin: 0;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: #26272d;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.btn {
+	color: #fff;
+	font-size: 16px;
+	display: inline-flex;
+	text-align: center;
+	transition: all 0.5s ease;
+}
+
+.btn:hover {
+	box-shadow: 0 8px 20px rgb(37 0 249 / 25%);
+	color: #fff;
+}
+
+.btn:active {
+	box-shadow: none
+}
+
+/*  Первый экран  */
+
+.header {
+	background: #fdfdfe url('../img/background.jpg') no-repeat center bottom / cover;
+	padding-top: 45px;
+	padding-bottom: 462px;
+}
+
+#menu-toggle {
+	display: none;
+  }
+  
+#menu-toggle:checked ~ .menu-box {
+	display: none;
+}
+
+#menu-toggle:checked ~ .menu-item-right {
+    display: none;
+}
+  
+.menu-btn {
+	display: block;
+	align-items: center;
+	width: 20px;
+	cursor: pointer;
+	margin: 0 30px 0 0;
+	padding: 5px 0px;
+}
+  
+.menu-btn > span,
+.menu-btn > span::before,
+.menu-btn > span::after {
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 2px;
+	background-color: #1b1c1e;
+	transition-duration: .25s;
+}
+.menu-btn > span::before {
+	content: '';
+	top: -5px;
+}
+.menu-btn > span::after {
+	content: '';
+	top: 5px;
+}
+  
+.menu-box, .menu-box-right {
+	display: flex;
+}
+  
+.menu-item a, .menu-item-right a {
+	font-size: 16px;
+	color: #26272d;
+	transition: 0.5s;
+	display: block;
+}
+.menu-item a:hover, .menu-item-right a:hover {
+    color: #8a8f9a;
+}
+
+.menu-item:not(:last-of-type) {
+	margin-right: 45px;
+}
+
+.menu-item-right {
+	margin-right: 33px;
+}
+
+.logo {
+	display: block;
+	background: url('../img/logo.svg');
+	width: 133px;
+	height: 15px;
+	margin: 0 auto;
+}
+
+.btn-header {
+	padding: 9px 18px;
+	border-radius: 21px;
+	background-color: #267df4;
+}
+
+.btn-header:hover {
+    background-color: #000000;
+}
+
+.btn-header::before {
+    content:'';
+	display: block;
+	background: url('../img/apple-icon.svg') no-repeat center center;
+	width: 17px;
+	height: 20px;
+	margin-right: 15px;
+}
+
+.offer {
+	text-align: center;
+	margin: 0px auto;
+	margin-top: 102px;
+	max-width: 790px;
+	margin-bottom: 50px;
+}
+
+.offer__title {
+	font-size: 62px;
+	font-weight: 700;
+	color: #26272d;
+	margin: 0;
+}
+
+.offer__text {
+	margin-top: 31px;
+	margin-bottom: 56px;
+}
+
+.offer__btn {
+    padding: 12px 45px;
+	border: 1px solid #26272d;
+    border-radius: 25px;
+	color: #26272d;
+}
+
+.offer__btn:hover {
+	color: #000000;
+	background-color: #fff;
+}
+
+.offer__btn::before {
+	content:'';
+	display: block;
+	background: url('../img/play-icon.svg') no-repeat center center;
+	width: 10px;
+	height: 10px;
+	margin: auto 0px;
+	margin-right: 15px;
+}
+
+.app-screen {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+/*   features   */
+
+.features {
+	position: relative;
+	background-color: #fff;
+	padding-top: 120px;
+	padding-bottom: 40px;
+}
+
+.features-offer__logo-lock {
+	width: 42px;
+	height: 51px;
+}
+
+.features-offer__logo-clock {
+	width: 41px;
+	height: 47px;
+}
+
+.features-offer__title {
+	margin-top: 40px;
+	margin-bottom: 35px;
+	font-size: 26px;
+	font-weight: 700;
+}
+
+.features-offer__text {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.features-offer__text:not(:last-of-type) {
+	margin-bottom: 25px;
+}
+
+/*   Phone Feature   */
+
+.phone-feature {
+	padding-top: 70px;
+	padding-bottom: 50px;
+}
+
+.app-screen-feature {
+	margin-left: -120px;
+}
+
+.phone-offer__title {
+	font-size: 42px;
+	font-weight: 700;
+}
+
+.phone-offer__title span {
+	display: block;
+}
+
+.phone-offer__text:not(:last-of-type) {
+    margin-bottom: 22px;
+}
+
+.phone-offer__desc {
+	margin-top: 78px;
+	margin-bottom: 68px;
+}
+
+.phone-offer__btn-blue {
+    padding: 9px 22px;
+    border-radius: 21px;
+    background-color: #267df4;
+	margin-right: 20px;
+}
+
+.phone-offer__btn-blue::after {
+	content: '';
+    display: block;
+    background: url('../img/arrow-icon.png') no-repeat center center;
+    width: 13px;
+    height: 12px;
+	margin: auto 0;
+    margin-left: 52px;
+}
+
+.phone-offer__btn-blue:hover {
+    background-color: #000000;
+}
+
+.phone-offer__btn-trans {
+	padding: 9px 34px;
+	border: 1px solid #26272d;
+    border-radius: 25px;
+	color: #26272d;
+}
+
+.phone-offer__btn-trans:hover {
+	color: #000000;
+}
+
+/*   Map Feature   */
+
+.map-feature {
+	padding-bottom: 140px;
+}
+
+.map-feature-title {
+	max-width: 290px;
+	font-size: 42px;
+}
+
+.map-offer__desc {
+	margin-top: 62px;
+    margin-bottom: 62px;
+}
+
+.map-offer__text:not(:last-of-type) {
+    margin-bottom: 23px;
+}
+
+.map_offer__partners-title {
+	margin-bottom: 30px;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+.partners-offer__item:not(:last-of-type) {
+	margin-right: 30px;
+}
+
+.map-feature-img {
+	margin-top: 50px;
+	margin-left: 35px;
+}
+
+/*   Footer   */
+
+.footer {
+	padding-top: 100px;
+	padding-bottom: 200px;
+}
+
+.footer-offer__logo {
+	margin: 0;
+}
+
+.footer-offer__desc {
+	font-size: 14px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.footer-offer__btn {
+	width: 140px;
+	height: 42px;
+	background: url('../img/appstore.png');
+	display: block;
+}
+
+.footer-items__title {
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+.footer-items__offer {
+	margin-top: 20px;
+}
+
+.footer-items__item {
+	font-size: 16px;
+	color: #8c8f94;
+	transition: 0.5s;
+	display: block;
+}
+
+.footer-items__offer li:not(:last-of-type) {
+	margin-bottom: 12px;
+}
+
+/*  Responsive  */
+
+@media (max-width: 1200px) {
+	.map-feature-img {
+		margin-left: 0;
+	}
+    .map-feature-image {
+        overflow: hidden;
+	}
+	.app-screen-feature {
+		margin-left: -200px;
+	}
+	.phone-offer__btn-blue::after {
+		margin-left: 25px;
+	}
+}
+
+@media (max-width: 992px) {
+	.menu-box-right {
+		display: none;
+	}
+	.menu-box {
+		display: none;
+	}
+	#menu-toggle:checked ~ .menu-box {
+		display: flex;
+	}
+	.features {
+		padding-top: 90px;
+	}
+	.features-offer {
+		margin-top: 35px;
+	}
+	.app-screen-feature {
+		margin-left: -40px;
+	}
+	.map-feature-image {
+		text-align: center;
+	}
+	.map-feature {
+		padding-bottom: 40px;
+	}
+	.footer {
+		padding-bottom: 100px;
+	}
+	.menu-item:not(:last-of-type) {
+		margin-right: 35px;
+	}
+}
+
+@media (max-width: 768px) {
+	.app-screen-feature {
+		width: 100%;
+		margin: 0;
+	}
+	.map-feature-img {
+		width: 100%;
+	}
+	.footer-items, .footer-offer {
+		margin-top: 35px;
+	}
+	.footer {
+		padding-top: 65px;
+	}
+	.header-logo {
+		margin: 0;
+		margin-left: auto;
+	}
+	.menu-btn {
+		margin-right: 15px;
+	}
+	.menu-item:not(:last-of-type) {
+		margin-right: 10px;
+	}
+}
+
+@media (max-width: 576px) {
+	.btn-header {
+		display: none;
+	}
+	.header-logo {
+		margin: 0 auto;
+	}
+	.menu-box {
+		display: flex;
+		opacity: 0;
+		transition: 0.25s;
+	}
+	#menu-toggle:checked ~ .menu-box {
+		opacity: 1;
+	}
+	.menu-item:not(:last-of-type) {
+		margin-right: 10px;
+	}
+	.menu-btn {
+		margin-right: 30px;
+	}
+	.app-screen {
+		width: 100%;
+	}
+	.footer-offer, .footer-items {
+        display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	.offer__title {
+		font-size: 52px;
+	}
+	.map_offer__partners-title {
+		text-align: center;
+	}
+	.partners-offer {
+		display: flex;
+		flex-direction: column;
+	}
+	.partners-offer__item {
+        text-align: center;
+	}
+	.partners-offer__item:not(:last-of-type) {
+		margin-right: 0px;
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width: 385px) {
+	.menu-item:not(:last-of-type) {
+		margin-right: 4px;
+	}
+	.menu-item {
+		font-size: 14px;
+	}
+	.menu-btn {
+		margin-right: 5px;
+	}
+	.btn {
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+	.phone-offer__btn-blue {
+		margin-right: 0px;
+		margin-bottom: 15px;
+	}
+	.header-logo {
+		margin-left: -5px;
+	}
+	.header {
+		padding-bottom: 285px;
+	}
+	.offer__title {
+		font-size: 42px;
+	}
+	.phone-offer__title {
+		font-size: 36px;
+	}
+	.map-feature-title {
+		font-size: 36px;
+	}
+}
+
+@media (max-width: 319px) {
+	.hamburger, .right-box {
+		display: none!important;
+	}
+	.offer__title {
+		font-size: 48px;
+	}
+	.header-logo {
+		margin-left: -10px;
+		margin-right: -15px;
+	}
+	.offer__title {
+		font-size: 32px;
+	}
+} 
