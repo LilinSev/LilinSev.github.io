@@ -1366,7 +1366,7 @@ plugins.Gravity = (function(_super) {
 
   Gravity.prototype.points = null;
 
-  Gravity.prototype.useMobileTilt = true;
+  Gravity.prototype.useMobileTilt = false;
 
   Gravity.prototype.mobileAmplitude = 0.1;
 
@@ -1377,7 +1377,7 @@ plugins.Gravity = (function(_super) {
     this.init = __bind(this.init, this);
 
     if (y != null) {
-      this.y = - y;
+      this.y = y;
     }
     if (x != null) {
       this.x = x;
