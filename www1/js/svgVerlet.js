@@ -1366,7 +1366,7 @@ plugins.Gravity = (function(_super) {
 
   Gravity.prototype.points = null;
 
-  Gravity.prototype.useMobileTilt = false;
+  Gravity.prototype.useMobileTilt = true;
 
   Gravity.prototype.mobileAmplitude = 0.1;
 
@@ -1397,9 +1397,9 @@ plugins.Gravity = (function(_super) {
       }
     }
     if (this.useMobileTilt && this.scene.isMobile()) {
-      mobileY = -this.mobileAmplitude * this.y;
+      mobileY = this.mobileAmplitude * this.y;
       if (this.x === 0) {
-        mobileX = -mobileY;
+        mobileX = mobileY;
       } else {
         mobileX = this.mobileAmplitude * this.x;
       }
