@@ -63,6 +63,8 @@ html, body {
 
 #container svg {
 	overflow: visible;
+	margin-left: 0 !important;
+	margin-top: 0 !important;
 }
 
 .arrow {
