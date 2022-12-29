@@ -1362,7 +1362,7 @@ plugins.Gravity = (function(_super) {
 
   Gravity.prototype.x = 0;
 
-  Gravity.prototype.y = 0.02;
+  Gravity.prototype.y = - 0.02;
 
   Gravity.prototype.points = null;
 
