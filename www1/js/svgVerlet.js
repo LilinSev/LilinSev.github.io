@@ -1405,7 +1405,7 @@ plugins.Gravity = (function(_super) {
       }
       return window.ondevicemotion = function(e) {
         _this.x = parseFloat(e.accelerationIncludingGravity.x) * mobileX;
-        return _this.y = parseFloat(e.accelerationIncludingGravity.y) * - mobileY;
+        return _this.y = - parseFloat(e.accelerationIncludingGravity.y) * mobileY;
       };
     }
   };
