@@ -1366,12 +1366,12 @@ plugins.Gravity = (function(_super) {
 
   Gravity.prototype.points = null;
 
-  Gravity.prototype.useMobileTilt = true;
+  Gravity.prototype.useMobileTilt = false;
 
   Gravity.prototype.mobileAmplitude = 0.1;
 
   function Gravity(y, x, useMobileTilt) {
-    this.useMobileTilt = useMobileTilt != null ? useMobileTilt : true;
+    this.useMobileTilt = useMobileTilt != null ? useMobileTilt : false;
     this.update = __bind(this.update, this);
 
     this.init = __bind(this.init, this);
