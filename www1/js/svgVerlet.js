@@ -1366,12 +1366,12 @@ plugins.Gravity = (function(_super) {
 
   Gravity.prototype.points = null;
 
-  Gravity.prototype.useMobileTilt = false;
+  Gravity.prototype.useMobileTilt = true;
 
   Gravity.prototype.mobileAmplitude = 0.1;
 
   function Gravity(y, x, useMobileTilt) {
-    this.useMobileTilt = useMobileTilt != null ? useMobileTilt : false;
+    this.useMobileTilt = useMobileTilt != null ? useMobileTilt : true;
     this.update = __bind(this.update, this);
 
     this.init = __bind(this.init, this);
@@ -1405,7 +1405,7 @@ plugins.Gravity = (function(_super) {
       }
       return window.ondevicemotion = function(e) {
         _this.x = parseFloat(e.accelerationIncludingGravity.x) * mobileX;
-        return _this.y = parseFloat(e.accelerationIncludingGravity.y) * mobileY;
+        return _this.y = parseFloat(e.accelerationIncludingGravity.y) * - mobileY;
       };
     }
   };
